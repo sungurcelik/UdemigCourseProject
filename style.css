@@ -1,0 +1,190 @@
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: rgb(38, 137, 145);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 25px;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .title h1 {
+  color: gray;
+}
+
+header .title h1 span {
+  color: var(--main-color);
+}
+
+header .title a {
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+/*! Nav */
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul a {
+  color: gray;
+}
+
+header nav ul a:hover {
+  color: var(--main-color);
+}
+
+header nav ul a i {
+  color: var(--main-color);
+}
+
+/*! Nav */
+
+/* Header */
+
+/* Section */
+
+section {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  padding: 15px;
+}
+section .sec-left {
+  text-align: center;
+  flex: 1;
+}
+section .images {
+  flex: 1;
+}
+section .sec-left h1 {
+  font-size: 35px;
+  color: gray;
+  margin-bottom: 25px;
+}
+section .sec-left h1 span {
+  color: var(--main-color);
+}
+section .sec-left p {
+  font-size: 16px;
+}
+section button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 400ms;
+}
+section button:hover {
+  scale: 1.1;
+}
+
+/* Section */
+
+/* info */
+
+.course-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(48, 137, 145, 0.55);
+  padding: 15px;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+.p-sec,
+.image-sec {
+  flex: 1;
+}
+.image-sec img {
+  width: 400px;
+}
+.course-info .p-sec h1 {
+  background-color: var(--main-color);
+  padding: 20px;
+  width: 60%;
+  position: absolute;
+  top: -20px;
+  border-bottom-right-radius: 60px;
+  border-top-left-radius: 10px;
+  color: #fff;
+}
+.course-info .p-sec p {
+  font-size: 17px;
+  color: #fff;
+}
+.course-info .p-sec button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  background-color: var(--main-color);
+  color: #fff;
+  transition: 500ms;
+}
+
+.course-info .p-sec button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* info */
+
+/* Footer */
+
+footer {
+  padding: 20px;
+  margin-top: 100px;
+  border-top: 1px solid var(--main-color);
+}
+footer .footer-start {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+footer .footer-start .footer-area {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-start .footer-area a {
+  color: gray;
+}
+footer .bottom {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid var(--main-color);
+  padding: 20px;
+}
+/* Footer */
